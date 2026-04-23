@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explore Narayan Construction's portfolio of residential, commercial, renovation, and government projects across Vapi and Gujarat."/>
+  <title>Projects & Portfolio | Narayan Construction — Vapi, Gujarat</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .projects-grid-full { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    @media(max-width:900px){ .projects-grid-full{grid-template-columns:repeat(2,1fr);} }
+    @media(max-width:560px){ .projects-grid-full{grid-template-columns:1fr;} }
+    .project-card { display:block; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">N</div>
+        <div class="logo-text">Narayan<br/><span>Construction</span></div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image:linear-gradient(135deg,rgba(13,13,13,0.88) 0%,rgba(26,26,46,0.82) 100%),url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80');background-size:cover;background-position:center;">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Projects</span></div>
+      <h1>Our Projects & Portfolio</h1>
+      <p>500+ completed projects — from dream homes to landmark commercial structures</p>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item"><h2 data-target="500" data-suffix="+">0+</h2><p>Projects Completed</p></div>
+        <div class="stat-item"><h2 data-target="200" data-suffix="+">0+</h2><p>Residential Projects</p></div>
+        <div class="stat-item"><h2 data-target="150" data-suffix="+">0+</h2><p>Commercial Projects</p></div>
+        <div class="stat-item"><h2 data-target="80" data-suffix="+">0+</h2><p>Government Projects</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS GALLERY WITH FILTER -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title">Project Gallery</h2>
+        <p class="section-sub">Filter by category to explore our diverse portfolio of construction excellence.</p>
+      </div>
+      <!-- Filter Buttons -->
+      <div class="projects-filter fade-up">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+        <button class="filter-btn" data-filter="residential" id="filter-residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial" id="filter-commercial">Commercial</button>
+        <button class="filter-btn" data-filter="renovation" id="filter-renovation">Renovation</button>
+        <button class="filter-btn" data-filter="government" id="filter-government">Government</button>
+      </div>
+      <!-- Projects Grid -->
+      <div class="projects-grid-full">
+
+        <div class="project-card fade-up" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=80" alt="Sunrise Villa Complex" loading="lazy"/>
+          <div class="project-overlay">
+            <span class="project-tag">Residential</span>
+            <h3>Sunrise Villa Complex</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Vapi, Gujarat &nbsp;|&nbsp; 2023</p>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1541888086225-f640647cd512?w=700&q=80" alt="Narayan Business Hub" loading="lazy"/>
+          <div class="project-overlay">
+            <span class="project-tag">Commercial</span>
+            <h3>Narayan Business Hub</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Surat, Gujarat &nbsp;|&nbsp; 2022</p>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="government">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&q=80" alt="District Municipal Office" loading="lazy"/>
+          <div class="project-overlay">
+            <span class="project-tag">Government</span>
+            <h3>District Municipal Office</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Vapi, Gujarat &nbsp;|&nbsp; 2021</p>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=700&q=80" alt="Green Valley Apartments" loading="lazy"/>
+          <div class="project-overlay">
+            <span class="project-tag">Residential</span>
+            <h3>Green Valley Apartments</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Vapi, Gujarat &nbsp;|&nbsp; 2023</p>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="renovation">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Heritage Bank Renovation" loading="lazy"/>
+          <div class="project-overlay">
+            <span class="project-tag">Renovation</span>
+            <h3>Heritage Bank Renovation</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Surat, Gujarat &nbsp;|&nbsp; 2022</p>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1621614364402-2cb5b161e1bd?w=700&q=80" alt="City Square Mall" loading="lazy"/>
+          <div class="project-overlay">
+            <span class="project-tag">Commercial</span>
+            <h3>City Square Mall</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Vapi, Gujarat &nbsp;|&nbsp; 2020</p>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1590644365607-1c5a39169601?w=700&q=80" alt="Royal Heights Bungalows" loading="lazy"/>
+          <div class="project-overlay">
+            <span class="project-tag">Residential</span>
+            <h3>Royal Heights Bungalows</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Daman &nbsp;|&nbsp; 2023</p>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="government">
+          <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=700&q=80" alt="Primary Health Center" loading="lazy"/>
+          <div class="project-overlay">
+            <span class="project-tag">Government</span>
+            <h3>Primary Health Centre</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Umargam, Gujarat &nbsp;|&nbsp; 2021</p>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="renovation">
+          <img src="https://images.unsplash.com/photo-1622340579720-bdabf42f7d93?w=700&q=80" alt="Tech Park Renovation" loading="lazy"/>
+          <div class="project-overlay">
+            <span class="project-tag">Renovation</span>
+            <h3>Tech Park Interior Redo</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Silvassa &nbsp;|&nbsp; 2022</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container fade-up">
+      <h2>Have a Project in Mind?</h2>
+      <p>Get in touch with us for a free site visit and project consultation.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-dark">Start Your Project</a>
+        <a href="services.html" class="btn btn-outline" style="color:var(--dark);border-color:var(--dark)">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo" style="margin-bottom:16px;display:flex;">
+            <div class="logo-icon">N</div>
+            <div class="logo-text">Narayan<br/><span>Construction</span></div>
+          </a>
+          <p>Building excellence since 1996 across Vapi, Gujarat, and India.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html">Residential Construction</a></li>
+            <li><a href="services.html">Commercial Construction</a></li>
+            <li><a href="services.html">Renovation & Interiors</a></li>
+            <li><a href="services.html">Government Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Near GIDC, Vapi, Gujarat 396195</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 98241 02342</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>atulgajera6678@gmail.com</span></div>
+          <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon-Sun: 9.00A.M.-9:00P.M.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+        <p>&copy; 2024 <span>Narayan Construction</span>. All rights reserved.</p>
+        <p>Built with <span>♥</span> in Vapi, India</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
